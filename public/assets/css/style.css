@@ -1,3 +1,4 @@
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -41,15 +42,18 @@ h6 {
   border-radius: 50px;
   transition: all 0.4s;
 }
+
 .back-to-top i {
   font-size: 28px;
   color: #fff;
   line-height: 0;
 }
+
 .back-to-top:hover {
   background: #0678e3;
   color: #fff;
 }
+
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
@@ -88,6 +92,7 @@ h6 {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -97,10 +102,12 @@ h6 {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
@@ -109,6 +116,7 @@ h6 {
     transition-delay: 0 !important;
   }
 }
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -137,6 +145,7 @@ h6 {
     margin-left: 100px;
   }
 }
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -147,6 +156,7 @@ h6 {
   padding: 0;
   display: block;
 }
+
 .nav-menu * {
   margin: 0;
   padding: 0;
