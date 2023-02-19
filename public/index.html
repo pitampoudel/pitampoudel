@@ -11,6 +11,12 @@
       if (xhr.readyState == 4) {
         var data = JSON.parse(xhr.responseText);
         document.title = data.title
+        document.getElementsByClassName('facebook').href = data.facebook
+        document.getElementsByClassName('github').href = data.github
+        document.getElementsByClassName('upwork').href = data.upwork
+        document.getElementsByClassName('skype').href = data.skype
+        document.getElementsByClassName('linkedin').href = data.linkedin
+        document.getElementsByClassName('twitter').href = data.twitter
       }
     };
     xhr.open("GET", 'data.json', false);
@@ -61,18 +67,14 @@
     style="background: url('assets/images/hero-bg.png')top right no-repeat;">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Pitam Poudel</h1>
-      <p>I'm <span class="typed" data-typed-items="Software Developer, Freelancer"></span></p>
+      <p>I'm <span class="typed" data-typed-items="Android Developer, Freelancer"></span></p>
       <div class="social-links">
-        <a href="https://github.com/pitampoudel" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://www.facebook.com/pitampoudelsaipu" target="_blank" class="facebook"><i
-            class="bx bxl-facebook"></i></a>
-        <a href="https://www.upwork.com/freelancers/~016d4303293d503f73" target="_blank" class="upwork"><i
-            class="bx bxl-upwork"></i></a>
-        <a href="https://join.skype.com/invite/u6lyFPBvqT2d" target="_blank" class="skype"><i
-            class="bx bxl-skype"></i></a>
-        <a href="https://www.linkedin.com/in/pitam-poudel-a90455206/" target="_blank" class="linkedin"><i
-            class="bx bxl-linkedin"></i></a>
-        <a href="https://twitter.com/poudel_pitam" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a target="_blank" class="github"><i class="bx bxl-github"></i></a>
+        <a target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a target="_blank" class="upwork"><i class="bx bxl-upwork"></i></a>
+        <a target="_blank" class="skype"><i class="bx bxl-skype"></i></a>
+        <a target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
       </div>
     </div>
   </section>
@@ -318,16 +320,12 @@
       <h3>Pitam Poudel</h3>
       <p>You can find me on social media using the links given below. I will reply as soon as I can.</p>
       <div class="social-links">
-        <a href="https://github.com/pitampoudel" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://www.facebook.com/pitampoudelsaipu" target="_blank" class="facebook"><i
-            class="bx bxl-facebook"></i></a>
-        <a href="https://www.upwork.com/freelancers/~016d4303293d503f73" target="_blank" class="upwork"><i
-            class="bx bxl-upwork"></i></a>
-        <a href="https://join.skype.com/invite/u6lyFPBvqT2d" target="_blank" class="skype"><i
-            class="bx bxl-skype"></i></a>
-        <a href="https://www.linkedin.com/in/pitam-poudel-a90455206/" target="_blank" class="linkedin"><i
-            class="bx bxl-linkedin"></i></a>
-        <a href="https://twitter.com/poudel_pitam" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a target="_blank" class="github"><i class="bx bxl-github"></i></a>
+        <a target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a target="_blank" class="upwork"><i class="bx bxl-upwork"></i></a>
+        <a target="_blank" class="skype"><i class="bx bxl-skype"></i></a>
+        <a target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
       </div>
       <div class="copyright">
         &copy; Copyright <strong><span>Pitam Poudel</span></strong>. All Rights Reserved
