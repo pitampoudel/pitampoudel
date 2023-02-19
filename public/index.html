@@ -202,7 +202,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/images/testimonials/troy_lyndon.jpg" class="testimonial-img" alt="">
+                <img src="assets/images/troy_lyndon.jpg" class="testimonial-img" alt="">
                 <h3>Troy Lyndon</h3>
                 <h4>RD Games Inc</h4>
                 <p>
@@ -346,7 +346,8 @@
         document.getElementsByClassName('skype').href = data.skype
         document.getElementsByClassName('linkedin').href = data.linkedin
         document.getElementsByClassName('twitter').href = data.twitter
-        document.getElementById("hero").style.background = url(data.hero_img)
+
+        document.getElementById("hero").style.backgroundImage = "url(" + data.hero_img + ")top right no-repeat";
 
       })
       .then((json) => console.log(json));
