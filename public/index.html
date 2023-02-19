@@ -5,7 +5,17 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Pitam - Sostware Developer</title>
+  <script>
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState == 4) {
+        var data = JSON.parse(xhr.responseText);
+        document.title = data.title
+      }
+    };
+    xhr.open("GET", 'data.json', false);
+    xhr.send();
+  </script>
 
   <!-- Favicons -->
   <link href="assets/images/favicon.svg" rel="icon">
@@ -40,7 +50,7 @@
         </li>
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
         <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-      
+
         </li>
       </ul>
     </nav><!-- .nav-menu -->
