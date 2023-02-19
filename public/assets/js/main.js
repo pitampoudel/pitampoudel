@@ -2,19 +2,6 @@
 
 (function () {
   "use strict";
-  
-  fetch('./data.json')
-    .then((response) => {
-      var data = response.json()
-      document.title = data.title
-      document.getElementsByClassName('facebook').href = data.facebook
-      document.getElementsByClassName('github').href = data.github
-      document.getElementsByClassName('upwork').href = data.upwork
-      document.getElementsByClassName('skype').href = data.skype
-      document.getElementsByClassName('linkedin').href = data.linkedin
-      document.getElementsByClassName('twitter').href = data.twitter
-    })
-    .then((json) => console.log(json));
 
   /**
    * Easy selector helper function
