@@ -26,14 +26,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <script>
-    fetch('./data.json')
-      .then((response) => {
-        var data = response.json()
-        document.title = data.firstName + " - " + data.designation
-      })
-      .then((json) => console.log(json));
-  </script>
+
 
 </head>
 
@@ -55,7 +48,8 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
+  <section id="hero" style="background: url('assets/images/hero-bg.png')top right no-repeat;;"
+    class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1 id="name"></h1>
       <p>I'm <span class="typed" data-typed-items="Android Developer, Freelancer"></span></p>
@@ -344,23 +338,29 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script>
-
     fetch('./data.json')
       .then((response) => {
-        var data = response.json()
-        document.getElementsById('name').innerHtml = data.firstName + " " + data.lastName
-        document.getElementsByClassName('facebook').href = data.facebook
-        document.getElementsByClassName('github').href = data.github
-        document.getElementsByClassName('upwork').href = data.upwork
-        document.getElementsByClassName('skype').href = data.skype
-        document.getElementsByClassName('linkedin').href = data.linkedin
-        document.getElementsByClassName('twitter').href = data.twitter
+        response.json().then((data) => {
 
-        document.getElementById("hero").style.backgroundImage = "url(" + data.hero_img + ")top right no-repeat";
+          document.getElementsByClassName('facebook').href = data.facebook
+          document.getElementsByClassName('github').href = data.github
+          document.getElementsByClassName('upwork').href = data.upwork
+          document.getElementsByClassName('skype').href = data.skype
+          document.getElementsByClassName('linkedin').href = data.linkedin
+          document.getElementsByClassName('twitter').href = data.twitter
 
+
+          document.title = data.firstName + " - " + data.designation
+          document.getElementById('name').innerHTML = data.firstName + " " + data.lastName
+
+
+
+          //  document.getElementById("hero").style.background = "url(" + data.hero_img + ") no-repeat";
+        })
       })
       .then((json) => console.log(json));
   </script>
+
 </body>
 
 </html>
