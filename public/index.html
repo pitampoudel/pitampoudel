@@ -26,6 +26,15 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <script>
+    fetch('./data.json')
+      .then((response) => {
+        var data = response.json()
+        document.title = data.title
+      })
+      .then((json) => console.log(json));
+  </script>
+
 </head>
 
 <body>
@@ -339,7 +348,6 @@
     fetch('./data.json')
       .then((response) => {
         var data = response.json()
-        document.title = data.title
         document.getElementsByClassName('facebook').href = data.facebook
         document.getElementsByClassName('github').href = data.github
         document.getElementsByClassName('upwork').href = data.upwork
