@@ -50,7 +50,7 @@
   <section id="hero" style="background: url('assets/images/hero-bg.png')top right no-repeat;;"
     class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1 id="name"></h1>
+      <h1 class="name"></h1>
       <p>I'm <span class="typed" data-typed-items="Android Developer, Freelancer"></span></p>
       <div class="social-links">
         <a href="" target="_blank" class="github"><i class="bx bxl-github"></i></a>
@@ -312,7 +312,7 @@
         <a href="" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
       </div>
       <div class="copyright">
-        &copy; Copyright <strong><span>Pitam Poudel</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span class="name"></span></strong>. All Rights Reserved
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -347,15 +347,11 @@
           document.getElementsByClassName('skype').href = data.skype
           document.getElementsByClassName('linkedin').href = data.linkedin
           document.getElementsByClassName('twitter').href = data.twitter
-
-          [document.getElementsByClassName('twitter')].forEach(el => {
-            el.href = data.twitter
-          })
+          document.getElementsByClassName('twitter').href = data.twitter
+          document.getElementsByClassName('name').innerHTML = data.firstName + " " + data.lastName
 
 
           document.title = data.firstName + " - " + data.designation
-          document.getElementById('name').innerHTML = data.firstName + " " + data.lastName
-
 
 
           //  document.getElementById("hero").style.background = "url(" + data.hero_img + ") no-repeat";
