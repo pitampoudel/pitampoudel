@@ -5,23 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <script>
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState == 4) {
-        var data = JSON.parse(xhr.responseText);
-        document.title = data.title
-        document.getElementsByClassName('facebook').href = data.facebook
-        document.getElementsByClassName('github').href = data.github
-        document.getElementsByClassName('upwork').href = data.upwork
-        document.getElementsByClassName('skype').href = data.skype
-        document.getElementsByClassName('linkedin').href = data.linkedin
-        document.getElementsByClassName('twitter').href = data.twitter
-      }
-    };
-    xhr.open("GET", 'data.json', false);
-    xhr.send();
-  </script>
+
 
   <!-- Favicons -->
   <link href="assets/images/favicon.svg" rel="icon">
@@ -353,6 +337,23 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState == 4) {
+        var data = JSON.parse(xhr.responseText);
+        document.title = data.title
+        document.getElementsByClassName('facebook').href = data.facebook
+        document.getElementsByClassName('github').href = data.github
+        document.getElementsByClassName('upwork').href = data.upwork
+        document.getElementsByClassName('skype').href = data.skype
+        document.getElementsByClassName('linkedin').href = data.linkedin
+        document.getElementsByClassName('twitter').href = data.twitter
+      }
+    };
+    xhr.open("GET", 'data.json', false);
+    xhr.send();
+  </script>
 </body>
 
 </html>
