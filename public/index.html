@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title></title>
   <!-- Favicons -->
   <link href="assets/images/favicon.svg" rel="icon">
   <link href="assets/images/favicon.svg" rel="apple-touch-icon">
@@ -348,6 +347,10 @@
           document.getElementsByClassName('skype').href = data.skype
           document.getElementsByClassName('linkedin').href = data.linkedin
           document.getElementsByClassName('twitter').href = data.twitter
+
+          [document.getElementsByClassName('twitter')].forEach(el => {
+            el.href = data.twitter
+          })
 
 
           document.title = data.firstName + " - " + data.designation
