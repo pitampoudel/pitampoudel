@@ -24,7 +24,7 @@
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="template/css/style.css" rel="stylesheet">
 
 
 </head>
@@ -47,8 +47,7 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" style="background: url('assets/images/hero-bg.png')top right no-repeat;;"
-    class="d-flex flex-column justify-content-center">
+  <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1 class="name"></h1>
       <p>I'm <span class="typed" data-typed-items="Android Developer, Freelancer"></span></p>
@@ -301,7 +300,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <h3>Pitam Poudel</h3>
+      <h3 class="name"></h3>
       <p>You can find me on social media using the links given below. I will reply as soon as I can.</p>
       <div class="social-links">
         <a href="" target="_blank" class="github"><i class="bx bxl-github"></i></a>
@@ -335,7 +334,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="template/js/main.js"></script>
   <script>
     fetch('./data.json')
       .then((response) => {
@@ -361,8 +360,9 @@
           Array.from(document.getElementsByClassName('name')).forEach((element) => {
             element.innerHTML = data.firstName + " " + data.lastName
           });
-          document.title = data.firstName + " - " + data.designation
-          //  document.getElementById("hero").style.background = "url(" + data.hero_img + ") no-repeat";
+          document.title = data.firstName + " - " + data.designation;
+          document.getElementById("hero").style = "background: url('" + "assets/images/hero-bg.png" + "')top right no-repeat;";
+
         })
       })
       .then((json) => console.log(json));
