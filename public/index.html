@@ -340,20 +340,28 @@
     fetch('./data.json')
       .then((response) => {
         response.json().then((data) => {
-
-          document.getElementsByClassName('facebook').href = data.facebook
-          document.getElementsByClassName('github').href = data.github
-          document.getElementsByClassName('upwork').href = data.upwork
-          document.getElementsByClassName('skype').href = data.skype
-          document.getElementsByClassName('linkedin').href = data.linkedin
-          document.getElementsByClassName('twitter').href = data.twitter
-          document.getElementsByClassName('twitter').href = data.twitter
-          document.getElementsByClassName('name').innerHTML = data.firstName + " " + data.lastName
-
-
+          Array.from(document.getElementsByClassName('facebook')).forEach((element) => {
+            element.href = data.facebook
+          });
+          Array.from(document.getElementsByClassName('github')).forEach((element) => {
+            element.href = data.github
+          });
+          Array.from(document.getElementsByClassName('upwork')).forEach((element) => {
+            element.href = data.upwork
+          });
+          Array.from(document.getElementsByClassName('skype')).forEach((element) => {
+            element.href = data.skype
+          });
+          Array.from(document.getElementsByClassName('linkedin')).forEach((element) => {
+            element.href = data.linkedin
+          });
+          Array.from(document.getElementsByClassName('twitter')).forEach((element) => {
+            element.href = data.twitter
+          });
+          Array.from(document.getElementsByClassName('name')).forEach((element) => {
+            element.innerHTML = data.firstName + " " + data.lastName
+          });
           document.title = data.firstName + " - " + data.designation
-
-
           //  document.getElementById("hero").style.background = "url(" + data.hero_img + ") no-repeat";
         })
       })
