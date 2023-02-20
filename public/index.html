@@ -360,6 +360,12 @@
           Array.from(document.getElementsByClassName('name')).forEach((element) => {
             element.innerHTML = data.firstName + " " + data.lastName
           });
+
+          //Not working
+          Array.from(document.getElementsByClassName('typed')).forEach((element) => {
+            element.dataset.typeditems = "Android Developer, Freelancer"
+          });
+
           document.title = data.firstName + " - " + data.designation;
           document.getElementById("hero").style = "background: url('" + "assets/images/hero-bg.png" + "')top right no-repeat;";
 
