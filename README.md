@@ -1,5 +1,9 @@
 ### Hi there 👋
 
+- 👋 I’m @Pitam-Poudel
+- 💞️ Looking to collaborate on open-source projects
+- 📫 Reach me at: https://pitampoudel.com.np/
+
 <!--
 **pitampoudel/pitampoudel** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
