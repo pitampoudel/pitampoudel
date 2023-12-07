@@ -6,7 +6,7 @@
       ],
       "target" : {
         "namespace" : "android_app",
-        "package_name" : "com.gorkhapay",
+        "package_name" : "pitam.demoapp",
         "sha256_cert_fingerprints" : [
           "AA:FB:8B:33:22:CB:FF:FB:ED:7C:76:B2:EB:2F:CA:18:61:D8:2F:94:24:91:FE:5A:B9:FB:9C:14:20:2D:59:51"
         ]
