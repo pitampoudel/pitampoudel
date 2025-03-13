@@ -415,9 +415,13 @@
             element.innerHTML = data.firstName + " " + data.lastName
           });
 
-          //Not working
-          Array.from(document.getElementsByClassName('typed')).forEach((element) => {
-            element.dataset.typeditems = "Software Engineer, Freelancer"
+          // Initialize Typed.js
+          new Typed('.typed', {
+            strings: ["Software Engineer", "Freelancer"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 2000,
+            loop: true
           });
 
           document.title = data.firstName + " - " + data.designation;
