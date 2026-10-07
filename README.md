@@ -1,20 +1,9 @@
-### Hi there 👋
+# Hi, I'm Pitam
 
-- 👋 I’m @Pitam-Poudel
-- 💞️ Looking to collaborate on open-source projects
-- 📫 Reach me at: https://pitam.com.np/
+Full-stack engineer in Nepal. I build Android, iOS and web apps with Kotlin Multiplatform, Spring Boot backends and Next.js frontends, and run the infrastructure underneath.
 
-<!--
-**pitampoudel/pitampoudel** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+- Building [bolnepage.com](https://bolnepage.com), an AI agent that answers customer messages for businesses
+- Co-founder of [GoDaan](https://godaan.com.np), Nepal's first dedicated crowdfunding platform
+- Creator of [komposeauth](https://github.com/pitampoudel/komposeauth), open-source auth for Kotlin Multiplatform
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Portfolio: [pitam.com.np](https://pitam.com.np) · [LinkedIn](https://www.linkedin.com/in/pitampoudel) · [Upwork](https://www.upwork.com/freelancers/pitampoudel)
